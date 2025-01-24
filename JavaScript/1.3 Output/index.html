@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Writing into an HTML element, using <mark>innerHTML</mark></p>
+    <h1>Using innerHTML</h1>
+    <p>To access an HTML element, JavaScript can use the <mark>document.getElementById(id)</mark> method.
+        The <mark>id</mark> attribute defines the HTML element. The <mark>innerHTML</mark> property defines the HTML content:
+    </p>
+    <p>JavaScript can "display" data in different ways:</p>
+    
+    <h2>My First Web page</h2>
+    <p>My first pararaph</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+</body>
+</html>

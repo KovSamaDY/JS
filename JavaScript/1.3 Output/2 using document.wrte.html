@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using document.write()</title>
+</head>
+<body>
+    <p>Writing into the HTML output using <mark>document.write()</mark></p>
+    <h1>Using document.write()</h1>
+    <p>For testing purposes, it is convenient to use <mark>document.write()</mark></p>
+
+    <h2>My First Web page</h2>
+    <p>My first paragraph.</p>
+    <p>Never call document.writ after the document has finished loading. <br>
+        It will overwrite the whole document.
+    </p>
+
+    //Using document.write() after an HTML document is loaded, will delete all existing HTML:
+    <!-- <h2>My First Web page</h2>
+    <p>My first paragraph.</p>
+    
+    <button type="button" onclick="document.write(6 + 7)">Try it</button> -->
+
+    <script>
+        // The document.write() method should only be used for testing.
+        document.write (5 + 6);
+    </script>
+</body>
+</html>
